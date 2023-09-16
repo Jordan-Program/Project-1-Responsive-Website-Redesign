@@ -1,0 +1,54 @@
+/* reset some default styles css*/
+body 
+    {
+        margin: 0;
+        padding: 0;
+        font-family: poppins, sans-serif;
+        background-color: #FEEBAE;
+    }
+/* end of reset some default styles css*/
+
+
+    /* Footer code*/
+.footer
+    {
+        color: white;
+        background-color: #000000;
+        font-style: normal;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        text-align: center;
+        width: 100%;
+        padding: 1px;
+        
+    }
+/* media queries for max width 600px */
+@media screen and (max-width: 600px) 
+    {
+        
+    }
+
+.avatar
+    {
+        height: auto;
+        width: 100%;
+    }
+
+
+/* media queries for max width 600px */
+@media screen and (max-width: 600px) 
+    {
+        .avatar
+        {
+            height: auto;
+            width: 5vw;
+        }
+        
+    
+    }
+
+    @media (max-width: 600px) {
+        .footer {
+            display: none;
+        }
+    }

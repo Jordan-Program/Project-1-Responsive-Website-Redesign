@@ -1,0 +1,101 @@
+/* reset some default styles css*/
+body 
+    {
+        margin: 0;
+        padding: 0;
+        font-family: poppins, sans-serif;
+        background-color: #FEEBAE;
+    }
+/* end of reset some default styles css*/
+
+/* h1 header css */
+.h1_header_title
+    {
+        color: rgb(0, 0, 0);
+        font-style: normal;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        text-align: left;
+        font-size: clamp(1.5rem, -0.5313rem + 6.5vw, 3.125rem);
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+    }
+/* end of H1 header css */
+
+
+/* flex container for header navigation css */
+.flex-container-navigation 
+    {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #D7A900;
+        color: #ffffff;
+        flex-direction:row;
+    }
+
+/* flex item */
+.flex-button-newsfeed 
+    {
+        padding: 20px;
+        margin: 15px;
+        font-size: 30px;
+        color: #000000;
+        margin: auto;
+    }
+
+.flex-button-newsfeed:hover 
+    {
+        opacity: 0.5;
+    }
+
+.flex-button-profile 
+    {
+        
+        padding: 20px;
+        margin: 15px;
+        font-size: 30px;
+        color: #000000;
+        margin: auto;
+    }
+
+.flex-button-profile:hover 
+    {
+        opacity: 0.5;
+    }
+
+.flex-button-logout 
+    {
+        padding: 20px;
+        margin: 15px;
+        font-size: 30px;
+        color: #000000;
+        margin: auto;
+    }
+
+.flex-button-logout:hover 
+    {
+        opacity: 0.5;
+    }
+
+
+    /* Footer code*/
+.footer
+    {
+        color: white;
+        background-color: #000000;
+        font-style: normal;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        text-align: center;
+        width: 100%;
+        padding: 1px;
+        
+    }
+
+
+    @media (max-width: 600px) {
+        .footer {
+            display: none;
+        }
+    }

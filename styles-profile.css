@@ -1,0 +1,337 @@
+/* Reset some default styles */
+body 
+    {   
+        
+        margin: 0;
+        padding: 0;
+        font-family: poppins, sans-serif;
+        background-color: #FEEBAE;
+    }
+/* End of Reset some default styles */
+
+/* h1 header css */
+.h1_header_title
+    {
+        color: rgb(0, 0, 0);
+        font-style: normal;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        text-align: left;
+        font-size: clamp(1.5rem, -0.5313rem + 6.5vw, 3.125rem);
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+    }
+/* end of H1 header css */
+
+
+/* Flex container for header navigation css */
+.flex-container-navigation 
+    {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #D7A900;
+        color: #ffffff;
+        flex-direction:row;
+        
+        
+    }
+
+/* flex item */
+.flex-button-newsfeed 
+    {
+        
+        padding: 20px;
+        margin: 15px;
+        font-size: 30px;
+        color: #000000;
+        margin: auto;
+    }
+
+.flex-button-profile 
+    {
+        
+        padding: 20px;
+        margin: 15px;
+        font-size: 30px;
+        color: #000000;
+        margin: auto;
+    }
+
+.flex-button-logout 
+    {
+        
+        padding: 20px;
+        margin: 15px;
+        font-size: 30px;
+        color: #000000;
+        margin: auto;
+    }
+
+/* media queries for max width 600px */
+@media screen and (max-width: 600px) 
+    {
+
+        /* Flex Container */
+        .flex-container-navigation 
+        {
+            flex-direction:row;
+            
+        }
+    
+        .flex-button-newsfeed 
+        {
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            color: #000000;
+            margin: auto;
+        }
+
+        .flex-button-profile 
+        {
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            color: #000000;
+            margin: auto;
+        }
+
+        .flex-button-logout 
+        {
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            color: #000000;
+            margin: auto;
+        }
+
+        .h1_header_title
+        {
+            color: rgb(0, 0, 0);
+            font-style: normal;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            text-align: left;
+            font-size: clamp(1.25rem, -2.25rem + 9.3333vw, 3rem);
+            width: 100%;
+            padding: 10px;
+            margin: auto;
+        }
+    }
+/* End flex container for header navigation css */
+
+/*flex container for profile image css*/
+.flex-container-profile 
+    {
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        flex-direction:row;
+    }
+/* end flex container for profile image css */
+
+/* flex container for about and photos css */
+.flex-container-about-image-button 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        
+    }
+.flex-button-about 
+    {
+        background-color: #4260FF;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+.flex-button-about:hover 
+    {
+        opacity: 0.5;
+    }
+
+.flex-button-image
+    {
+        background-color: #4260FF;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+.flex-button-image:hover 
+    {
+        opacity: 0.5;
+    }
+
+/* media queries for max width 390px */
+@media screen and (max-width: 600px) 
+    {
+        .flex-button-about 
+        {
+            background-color: #4260FF;
+            border: none;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .flex-button-image
+        {
+            background-color: #4260FF;
+            border: none;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+    }
+
+/*  news feed css*/
+
+/* news feed css*/
+.flex-bg-newsfeed
+    {   
+    
+        margin: auto;
+        background-color: #ACA7A7;
+        padding: 20px;
+        width: 80%;
+        border-radius: 15px;
+       
+    }
+
+.whatsonyourmind-textbox
+    {
+        border-radius: 15px;
+        padding: 10px; 
+        width: 100%;
+        height: 15px; 
+        font: 1.25rem/3 sans-serif;
+    }
+/* end news feed css*/
+
+/* post button css*/
+.flex-container-post
+    {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        margin: auto;
+        background-color: #ACA7A7;
+        padding: 20px;
+        width: 80%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+.whatsonyourmind-post-button 
+    {
+        color: white;
+        background-color: #4260FF;
+        font-style: normal;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+/* end post button css*/
+
+/* text-news feed css*/
+.p-newsfeed
+{ 
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    background-position: left top;
+    padding: 20px;
+    width: 82%;
+}
+/* end text-news feed css*/
+
+/* post button css*/
+.flex-container-imagepost
+    {   
+        margin: auto;
+        background-color: #ACA7A7;
+        padding: 20px;
+        width: 80%;
+        border-radius: 15px;
+    }
+
+    /* Footer code*/
+.footer
+    {
+        color: white;
+        background-color: #000000;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        width: 100%;
+        padding: 1px;
+        
+    }
+
+.avatar
+{
+    height: auto;
+    width: 100%;
+}
+
+.newsfeed-container
+{
+    
+    margin: auto;
+    background-color: #ACA7A7;
+    padding: 20px;
+    max-width: 1000px;
+    border-radius: 15px;
+}
+
+.coverphoto
+{
+    background-image: url(images/banana.jpg);
+}
+
+.profile-button
+{
+    width: 5vw;
+    height: 5vw;
+
+}
+
+@media (max-width: 600px) {
+	.footer {
+		display: none;
+        
+	}
+}
+

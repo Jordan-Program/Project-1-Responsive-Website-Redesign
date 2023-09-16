@@ -1,0 +1,437 @@
+/* reset some default styles css*/
+body 
+    {
+        margin: 0;
+        padding: 0;
+        font-family: poppins, sans-serif;
+        background-color: #FEEBAE;
+    }
+/* end of reset some default styles css*/
+
+/* h1 header css */
+.h1_header_title
+    {
+        color: rgb(0, 0, 0);
+        font-style: normal;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        text-align: left;
+        font-size: clamp(1.5rem, -0.5313rem + 6.5vw, 3.125rem);
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+    }
+/* end of H1 header css */
+
+
+/* flex container for header navigation css */
+.flex-container-navigation 
+    {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #D7A900;
+        color: #ffffff;
+        flex-direction:row;
+    }
+
+/* flex item */
+.flex-button-newsfeed 
+    {
+        padding: 20px;
+        margin: 15px;
+        font-size: 30px;
+        color: #000000;
+        margin: auto;
+    }
+
+.flex-button-newsfeed:hover 
+    {
+        opacity: 0.5;
+    }
+
+.flex-button-profile 
+    {
+        
+        padding: 20px;
+        margin: 15px;
+        font-size: 30px;
+        color: #000000;
+        margin: auto;
+    }
+
+.flex-button-profile:hover 
+    {
+        opacity: 0.5;
+    }
+
+.flex-button-logout 
+    {
+        padding: 20px;
+        margin: 15px;
+        font-size: 30px;
+        color: #000000;
+        margin: auto;
+    }
+
+.flex-button-logout:hover 
+    {
+        opacity: 0.5;
+    }
+
+/* media queries for max width 600px */
+@media screen and (max-width: 600px) 
+    {
+
+        /* Flex Container */
+        .flex-container-navigation 
+        {
+            flex-direction:row;
+            
+        }
+    
+        .flex-button-newsfeed 
+        {
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            color: #000000;
+            margin: auto;
+        }
+
+        .flex-button-profile 
+        {
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            color: #000000;
+            margin: auto;
+        }
+
+        .flex-button-logout 
+        {
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            color: #000000;
+            margin: auto;
+        }
+
+        .h1_header_title
+        {
+            color: rgb(0, 0, 0);
+            font-style: normal;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            text-align: left;
+            font-size: clamp(1.25rem, -2.25rem + 9.3333vw, 3rem);
+            width: 100%;
+            padding: 10px;
+            margin: auto;
+        }
+    }
+/* End flex container for header navigation css*/
+
+/* For the my day css*/
+.myday-container
+    {
+        
+        margin: auto;
+        background-color: #ACA7A7;
+        padding: 20px;
+        max-width: 1000px;
+        border-radius: 15px;
+    }
+
+.newsfeed-container
+    {
+        
+        margin: auto;
+        background-color: #ACA7A7;
+        padding: 20px;
+        max-width: 1000px;
+        border-radius: 15px;
+    }
+
+.stories-container 
+    {
+        max-width: 1000px;
+        margin: 24px auto;
+        position: relative;
+    }
+
+.stories-container .previous-btn,
+.stories-container .next-btn,
+.stories-full-view .previous-btn,
+.stories-full-view .next-btn 
+    {
+        width: 30px;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #444;
+        color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+        display: flex;
+        cursor: pointer;
+    }
+
+.stories-container .previous-btn,
+.stories-container .next-btn 
+    {
+        opacity: 0;
+        pointer-events: none;
+        transition: all 400ms ease;
+    }
+
+.stories-container .previous-btn.active,
+.stories-container .next-btn.active 
+    {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+.stories-container .previous-btn,
+.stories-full-view .previous-btn 
+    {
+        left: 8px;
+    }
+
+.stories-container .next-btn,
+.stories-full-view .next-btn 
+    {
+        right: 8px;
+    }
+
+.stories-container .story 
+    {
+        height: 180px;
+        width: 120px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+    }
+
+.stories-container .story img 
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.stories-container .stories 
+    {
+        display: flex;
+        gap: 8px;
+    }
+
+.stories-container .content 
+    {
+        overflow-x: scroll;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+.stories-container .content::-webkit-scrollbar 
+    {
+        display: none;
+    }
+
+.stories-container .author 
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 8px 16px;
+        font-size: 15px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: #fff;
+        background: linear-gradient(transparent, #222 130%);
+    }
+
+.stories-full-view 
+    {
+        position: fixed;
+        inset: 0;
+        z-index: 5;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+        place-items: center;
+    }
+
+.stories-full-view.active 
+    {
+        display: grid;
+    }
+
+.stories-full-view .close-btn 
+    {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 30px;
+        background: #444;
+        color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+        display: flex;
+        z-index: 20;
+        cursor: pointer;
+    }
+
+.stories-full-view .content 
+    {
+        height: 90vh;
+        width: 100%;
+        max-width: 700px;
+        position: relative;
+    }
+
+.stories-full-view .story 
+    {
+        height: 100%;
+        text-align: center;
+    }
+
+.stories-full-view .story img 
+    {
+        height: 100%;
+        aspect-ratio: 10/16;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+.stories-full-view .author 
+    {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 4px 32px;
+        border-radius: 8px;
+    }
+/*  end of my day css*/
+
+/* news feed css*/
+
+
+.flex-bg-newsfeed
+    {   
+    
+        margin: auto;
+        background-color: #ACA7A7;
+        padding: 20px;
+        width: 80%;
+        border-radius: 15px;
+       
+    }
+
+.whatsonyourmind-textbox
+    {
+        border-radius: 15px;
+        padding: 10px; 
+        width: 100%;
+        height: 15px; 
+        font: 1.25rem/3 sans-serif;
+    }
+/* end news feed css*/
+
+/* post button css*/
+.flex-container-post
+    {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        margin: auto;
+        background-color: #ACA7A7;
+        padding: 20px;
+        width: 80%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+.whatsonyourmind-post-button 
+    {
+        color: white;
+        background-color: #4260FF;
+        font-style: normal;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+/* end post button css*/
+
+/* text-news feed css*/
+.p-newsfeed
+    { 
+        margin: auto;
+        background-position: left top;
+        padding: 20px;
+        width: 82%;
+    }
+/* end text-news feed css*/
+
+/* post button css*/
+.flex-container-imagepost
+    {   
+        margin: auto;
+        background-color: #ACA7A7;
+        padding: 20px;
+        width: 80%;
+        border-radius: 15px;
+    }
+
+    /* Footer code*/
+.footer
+    {
+        color: white;
+        background-color: #000000;
+        font-style: normal;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        text-align: center;
+        width: 100%;
+        padding: 1px;
+        
+    }
+/* media queries for max width 600px */
+@media screen and (max-width: 600px) 
+    {
+        
+    }
+
+.avatar
+    {
+        height: auto;
+        width: 100%;
+    }
+
+
+/* media queries for max width 600px */
+@media screen and (max-width: 600px) 
+    {
+        .avatar
+        {
+            height: auto;
+            width: 5vw;
+        }
+        
+    
+    }
+
+    @media (max-width: 600px) {
+        .footer {
+            display: none;
+        }
+    }
