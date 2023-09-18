@@ -1,13 +1,14 @@
-/* Reset some default styles */
+/* reset some default styles css*/
 body 
-    {   
-        
+    {
         margin: 0;
         padding: 0;
         font-family: poppins, sans-serif;
         background-color: #FEEBAE;
+        min-height: 100vh;
     }
-/* End of Reset some default styles */
+/* end of reset some default styles css*/ 
+
 
 /* h1 header css */
 .h1_header_title
@@ -25,7 +26,7 @@ body
 /* end of H1 header css */
 
 
-/* Flex container for header navigation css */
+/* flex container for header navigation css */
 .flex-container-navigation 
     {
         display: flex;
@@ -34,18 +35,21 @@ body
         color: #ffffff;
         flex-direction:row;
         
-        
     }
 
 /* flex item */
 .flex-button-newsfeed 
     {
-        
         padding: 20px;
         margin: 15px;
         font-size: 30px;
         color: #000000;
         margin: auto;
+    }
+
+.flex-button-newsfeed:hover 
+    {
+        opacity: 0.5;
     }
 
 .flex-button-profile 
@@ -58,14 +62,23 @@ body
         margin: auto;
     }
 
+.flex-button-profile:hover 
+    {
+        opacity: 0.5;
+    }
+
 .flex-button-logout 
     {
-        
         padding: 20px;
         margin: 15px;
         font-size: 30px;
         color: #000000;
         margin: auto;
+    }
+
+.flex-button-logout:hover 
+    {
+        opacity: 0.5;
     }
 
 /* media queries for max width 600px */
@@ -83,7 +96,7 @@ body
         {
             padding: 20px;
             margin: 10px;
-            font-size: 20px;
+            font-size: 15px;
             color: #000000;
             margin: auto;
         }
@@ -92,7 +105,7 @@ body
         {
             padding: 20px;
             margin: 10px;
-            font-size: 20px;
+            font-size: 15px;
             color: #000000;
             margin: auto;
         }
@@ -101,7 +114,7 @@ body
         {
             padding: 20px;
             margin: 10px;
-            font-size: 20px;
+            font-size: 15px;
             color: #000000;
             margin: auto;
         }
@@ -119,7 +132,7 @@ body
             margin: auto;
         }
     }
-/* End flex container for header navigation css */
+/* End flex container for header navigation css*/
 
 /*flex container for profile image css*/
 .flex-container-profile 
@@ -266,6 +279,16 @@ body
     }
 /* end post button css*/
 
+span a 
+{
+    background: #D7A900;
+    color: #fff;
+    display: inline-block;
+    /* float:left;  remove */
+    margin: 10px 10px 0 0;
+    padding: 5px 10px
+}
+
 /* text-news feed css*/
 .p-newsfeed
 { 
@@ -288,17 +311,20 @@ body
     }
 
     /* Footer code*/
+   /* Footer code*/
 .footer
-    {
-        color: white;
-        background-color: #000000;
-        font-style: normal;
-        font-weight: normal;
-        text-align: center;
-        width: 100%;
-        padding: 1px;
-        
-    }
+   {
+       color: white;
+       background-color: #000000;
+       font-style: normal;
+       font-weight: normal;
+       text-align: center;
+       width: 100%;
+       padding: 1px;
+       position: sticky;
+       top: 100%;
+       
+   }
 
 .avatar
 {

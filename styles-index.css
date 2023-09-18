@@ -5,20 +5,23 @@ body
         padding: 0;
         font-family: poppins, sans-serif;
         background-color: #FEEBAE;
+        min-height: 100vh;
     }
-/* end of reset some default styles css*/
+/* end of reset some default styles css*/ 
 
 
-/* css for footer*/
+
+   /* Footer code*/
 .footer
-    {
-        color: white;
-        background-color: #000000;
-        font-style: normal;
-        font-family: Arial, sans-serif;
-        font-weight: normal;
-        text-align: center;
-        width: 100%;
-        padding: 1px;
-        
-    }
+   {
+       color: white;
+       background-color: #000000;
+       font-style: normal;
+       font-weight: normal;
+       text-align: center;
+       width: 100%;
+       padding: 1px;
+       position: sticky;
+       top: 100%;
+       
+   }

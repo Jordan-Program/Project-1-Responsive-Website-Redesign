@@ -5,8 +5,20 @@ body
         padding: 0;
         font-family: poppins, sans-serif;
         background-color: #FEEBAE;
+        min-height: 100vh;
     }
 /* end of reset some default styles css*/
+
+
+span a 
+{
+    background: #D7A900;
+    color: #fff;
+    display: inline-block;
+    /* float:left;  remove */
+    margin: 10px 10px 0 0;
+    padding: 5px 10px
+}
 
 /* h1 header css */
 .h1_header_title
@@ -32,6 +44,7 @@ body
         background-color: #D7A900;
         color: #ffffff;
         flex-direction:row;
+        
     }
 
 /* flex item */
@@ -93,7 +106,7 @@ body
         {
             padding: 20px;
             margin: 10px;
-            font-size: 20px;
+            font-size: 15px;
             color: #000000;
             margin: auto;
         }
@@ -102,7 +115,7 @@ body
         {
             padding: 20px;
             margin: 10px;
-            font-size: 20px;
+            font-size: 15px;
             color: #000000;
             margin: auto;
         }
@@ -111,7 +124,7 @@ body
         {
             padding: 20px;
             margin: 10px;
-            font-size: 20px;
+            font-size: 15px;
             color: #000000;
             margin: auto;
         }
@@ -392,19 +405,20 @@ body
         border-radius: 15px;
     }
 
-    /* Footer code*/
+   /* Footer code*/
 .footer
-    {
-        color: white;
-        background-color: #000000;
-        font-style: normal;
-        font-family: Arial, sans-serif;
-        font-weight: normal;
-        text-align: center;
-        width: 100%;
-        padding: 1px;
-        
-    }
+   {
+       color: white;
+       background-color: #000000;
+       font-style: normal;
+       font-weight: normal;
+       text-align: center;
+       width: 100%;
+       padding: 1px;
+       position: sticky;
+       top: 100%;
+       
+   }
 /* media queries for max width 600px */
 @media screen and (max-width: 600px) 
     {

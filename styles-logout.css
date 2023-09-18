@@ -1,12 +1,14 @@
-/* Reset some default styles */
+/* reset some default styles css*/
 body 
     {
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
+        font-family: poppins, sans-serif;
         background-color: #FEEBAE;
+        min-height: 100vh;
     }
-/* End of Reset some default styles */
+/* end of reset some default styles css*/ 
+
 
 /* h1 header css */
 .h1_header_title
@@ -140,19 +142,20 @@ button:hover
     }
 }
 
- /* Footer code*/
- .footer
-    {
-        color: white;
-        background-color: #000000;
-        font-style: normal;
-        font-family: Arial, sans-serif;
-        font-weight: normal;
-        text-align: center;
-        width: 100%;
-        padding: 1px;
-        
-    }
+   /* Footer code*/
+.footer
+   {
+       color: white;
+       background-color: #000000;
+       font-style: normal;
+       font-weight: normal;
+       text-align: center;
+       width: 100%;
+       padding: 1px;
+       position: sticky;
+       top: 100%;
+       
+   }
 
     @media (max-width: 600px) {
         .footer {
