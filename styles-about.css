@@ -21,10 +21,10 @@ body
         padding: 10px;
         margin: auto;
     }
-/* end of H1 header css */
+/* end of h1 header css */
 
 
-/* flex container for header navigation css */
+/* css for nav container */
 .flex-container-navigation 
     {
         display: flex;
@@ -33,8 +33,9 @@ body
         color: #ffffff;
         flex-direction:row;
     }
+/* end css for nav container */
 
-/* flex item */
+/* css for nav button */
 .flex-button-newsfeed 
     {
         padding: 20px;
@@ -77,6 +78,8 @@ body
     {
         opacity: 0.5;
     }
+
+/* end css for nav button */
 
 
     /* Footer code*/

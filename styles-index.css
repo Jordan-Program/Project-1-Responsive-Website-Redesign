@@ -9,7 +9,7 @@ body
 /* end of reset some default styles css*/
 
 
-    /* Footer code*/
+/* css for footer*/
 .footer
     {
         color: white;
@@ -21,34 +21,4 @@ body
         width: 100%;
         padding: 1px;
         
-    }
-/* media queries for max width 600px */
-@media screen and (max-width: 600px) 
-    {
-        
-    }
-
-.avatar
-    {
-        height: auto;
-        width: 100%;
-    }
-
-
-/* media queries for max width 600px */
-@media screen and (max-width: 600px) 
-    {
-        .avatar
-        {
-            height: auto;
-            width: 5vw;
-        }
-        
-    
-    }
-
-    @media (max-width: 600px) {
-        .footer {
-            display: none;
-        }
     }
